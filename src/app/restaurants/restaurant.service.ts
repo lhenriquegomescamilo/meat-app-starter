@@ -5,6 +5,8 @@ import { Http } from "@angular/http";
 import { Observable } from "rxjs/Observable";
 import { BASE_API } from "app/base-api";
 import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/catch';
+import { ErrorHandler } from "app/app-error-handler";
 
 @Injectable()
 export class RestaurantService {
@@ -16,6 +18,8 @@ export class RestaurantService {
 
   get restaurants(): Observable<Restaurant[]> {
     return this._http.get(`${BASE_API}/restaurants`)
-      .map(response => response.json() as Restaurant[]);
+      .map(response => response.json() as Restaurant[])
+      .catch(error => ErrorHandler.handleError(error));
+      
   }
 }
