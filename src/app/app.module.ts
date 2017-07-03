@@ -11,6 +11,10 @@ import { AboutComponent } from './about/about.component';
 import { ROUTES } from "app/app.routes";
 import { RestaurantsComponent } from './restaurants/restaurants.component';
 import { CardsRestaurantComponent } from './restaurants/cards-restaurant/cards-restaurant.component';
+import { RestaurantDetailComponent } from './restaurants/restaurant-detail/restaurant-detail.component';
+import { MenuDetailComponent } from './restaurants/restaurant-detail/menu-detail/menu-detail.component';
+import { MenuItemComponent } from './restaurants/restaurant-detail/menu-item/menu-item.component';
+import { ShoppingCartComponent } from './restaurants/restaurant-detail/shopping-cart/shopping-cart.component';
 
 
 
@@ -22,6 +26,10 @@ import { CardsRestaurantComponent } from './restaurants/cards-restaurant/cards-r
     AboutComponent,
     RestaurantsComponent,
     CardsRestaurantComponent,
+    RestaurantDetailComponent,
+    MenuDetailComponent,
+    MenuItemComponent,
+    ShoppingCartComponent,
 
 
   ],
