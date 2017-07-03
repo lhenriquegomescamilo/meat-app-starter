@@ -9,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ROUTES } from "app/app.routes";
+import { RestaurantsComponent } from './restaurants/restaurants.component';
 
 
 
@@ -18,6 +19,7 @@ import { ROUTES } from "app/app.routes";
     HeaderComponent,
     HomeComponent,
     AboutComponent,
+    RestaurantsComponent,
 
 
   ],
